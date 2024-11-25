@@ -1,7 +1,142 @@
-body{
-    background-color: rgb(253, 156, 38);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9e6; /* Fundo claro */
 }
 
-header{
-    justify-content: left;
+header {
+    background-color: #ffcc00; /* Amarelo */
+    padding: 20px;
+    text-align: center;
+}
+
+.header{
+    background-color: #ffcc00;
+}
+
+h1 {
+    color: #333; /* Cor do título */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Utiliza flexbox para alinhar os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #333; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ffdb4d;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px; /* Espaçamento interno da seção principal */
+    text-align: center;
+    justify-items: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+footer {
+    background-color: #ffcc00; /* Amarelo */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h2{
+    color: rgb(0, 0, 0); 
+    background-color: rgb(252, 214, 0); 
+    padding: 10px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #eef124;
+    background-color: #121f20;
+}
+
+h2 a :hover{
+    color: #121f20;
+    background-color: #eef124;
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pedaco{
+    margin: 20px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.pedaco a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.pedaco img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.form{
+    padding: 5px;
+}
+
+.form_content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form_content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form_content label{
+     display: inline-block;
+     margin-bottom: 4px;
+}
+
+.form_content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.form button{
+    background-color: #ffcc00;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }

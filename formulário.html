@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('img/moedas.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+        .cadastro{
+            background-color: bisque;
+            border-radius: 10px;
+            border-radius: 14px;
+            margin: 14px;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .header{
+            text-align: center;
+            padding: 15px;
+        }
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="cadastro">
+        <section class="header">
+            CADASTRAMENTO
+        </section>
+
+        <form id="form" class="form">
+            <div class="form_content">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" class="input" placeholder= "digite seu nome...">
+                <span id="erroNome" style="color: red;"></span>
+            </div>
+            
+            <div class="form_content">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email...">     
+                <span id="erroEmail" style="color: red;"></span>
+            </div>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label> <br>
+                <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label> <br>
+                <input type="radio" name="sexo" id="ioutro"><label for="ioutro">Outro</label>
+            </fieldset>
+            <br>
+
+            <div class="form_content">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" 
+                placeholder="Digite sua senha..."/>
+                <span id="erroSenha" style="color: red;"></span>
+            </div>
+
+            <div class="form_content">
+                <label for="Confirmação">Confirmação de Senha</label>
+                <input type="password" id="Confirmação" 
+                placeholder="Digite sua senha novamente..."/>
+                <span id="erroConfirm" style="color: red;"></span>
+            </div>
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
