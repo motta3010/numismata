@@ -6,29 +6,33 @@ body {
 }
 
 header {
-    background-color: #ffcc00; /* Amarelo */
+    background-color: #b1b1b1;
     padding: 20px;
     text-align: center;
 }
 
 .header{
-    background-color: #ffcc00;
+    background-color:#ffcc00;
+    text-align: left;
 }
 
 h1 {
-    color: #333; /* Cor do título */
+    color: #333;
+    text-align: left;
 }
 
 nav ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    display: flex; /* Utiliza flexbox para alinhar os itens em linha */
-    justify-content: center; /* Centraliza os itens */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content:left; 
 }
 
 nav ul li {
-    margin: 0 15px; /* Espaçamento entre os itens do menu */
+    margin: 0 15px;
+    justify-content: center;
+    justify-items: center;
 }
 
 nav ul li a {
@@ -47,11 +51,12 @@ main {
     text-align: center;
     justify-items: center;
     color: rgb(0, 0, 0);
+    background-image: url(https://th.bing.com/th/id/OIP.PqD92wtj4Da4M9FUD9LFRAHaEo?rs=1&pid=ImgDetMain);
     
 }
 
 footer {
-    background-color: #ffcc00; /* Amarelo */
+    background-color:#b1b1b1;
     padding: 10px;
     text-align: center;
     position: relative;
@@ -60,9 +65,8 @@ footer {
 }
 
 h2{
-    color: rgb(0, 0, 0); 
-    background-color: rgb(252, 214, 0); 
-    padding: 10px;
+    color: rgb(0, 0, 0);  
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 a{
@@ -84,8 +88,6 @@ h2 a :hover{
 .pedaco{
     margin: 20px;
     width: 20%;
-    border-radius: 5px;
-    background-color: #ffcc00;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
@@ -139,4 +141,23 @@ h2 a :hover{
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+section{
+    background-color: #e0dede9d;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: larger;
+}
+
+p{
+    color:#121f20;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    color: #121f20;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
